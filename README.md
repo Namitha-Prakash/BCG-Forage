@@ -1,62 +1,64 @@
 BCG Data Science & Analytics Virtual Internship – Project README
-About the Project
+🚀 About the Project
 
 This project was completed as part of the BCG Data Science & Analytics Virtual Internship Programme (Forage).
 
-The client, PowerCo, is a major gas and electricity utility company serving corporate, SME, and residential customers across Europe. Due to energy market liberalization, the company has experienced significant churn, particularly within the SME segment.
+The client, PowerCo, is a major gas and electricity utility company serving corporate, SME, and residential customers across Europe. Due to energy market liberalization, the company has experienced significant churn, especially within the SME segment.
 
-BCG was engaged to investigate the drivers of churn and test the hypothesis that customer price sensitivity is the primary reason for churn. The project involved exploratory data analysis, hypothesis testing, feature engineering, predictive modeling, and strategic business recommendations regarding a proposed 20% discount strategy.
+The objective of this project was to test the hypothesis that customer churn is primarily driven by price sensitivity. The analysis included Exploratory Data Analysis (EDA), hypothesis testing, feature engineering, predictive modeling, and business-focused recommendations regarding a proposed 20% discount strategy.
 
-Project Requirements
+📌 Project Requirements
 
-Formulate churn as a data science classification problem and test the hypothesis that price sensitivity drives churn.
+Frame churn prediction as a classification problem.
 
-Perform exploratory data analysis (EDA) to understand customer behavior and identify churn indicators.
+Perform exploratory data analysis to understand churn behavior.
 
-Engineer predictive features and build a Random Forest classifier to predict churn probability.
+Define and test price sensitivity as a potential churn driver.
 
-Evaluate model performance and connect predictions to business impact, particularly regarding discount strategies.
+Engineer features and build a Random Forest classifier.
 
-Tools & Technologies
+Evaluate model performance and connect results to business impact.
 
-Google Colab for model development and experimentation.
+🛠 Tools & Technologies
 
-Python for data analysis and machine learning.
+💻 Google Colab
 
-Pandas & NumPy for data manipulation and numerical computations.
+🐍 Python
 
-Matplotlib & Seaborn for data visualization.
+📊 Pandas & NumPy
 
-Scikit-learn for feature engineering, model training, and evaluation.
+📈 Matplotlib & Seaborn
 
-CSV datasets for historical customer, pricing, and churn data.
+🤖 Scikit-learn
 
-Challenges Faced
+📁 CSV datasets (customer, pricing, churn data)
 
-Data Cleaning & Preprocessing – Handling missing values, inconsistent formats, categorical encoding, and ensuring proper merging of customer and pricing datasets.
+⚠️ Challenges Faced
 
-Defining Price Sensitivity – Translating a business hypothesis into a measurable variable required creating proxy features from available pricing and consumption data.
+Data Cleaning & Preprocessing – Handling missing values, encoding categorical variables, and merging multiple datasets correctly.
 
-Class Imbalance – The churn rate (~9–10%) created an imbalanced classification problem requiring careful metric selection.
+Defining Price Sensitivity – Converting a business assumption into measurable features using pricing and consumption variables.
 
-Model Evaluation & Business Alignment – Connecting technical metrics such as precision and recall to real financial outcomes and discount decisions.
+Class Imbalance – Churn rate (~9–10%) created imbalance, requiring careful selection of evaluation metrics.
 
-Key Insights
+Business Interpretation – Translating model performance (precision, recall, F1-score) into financial impact and discount strategy decisions.
 
-Customer churn rate was approximately 9–10%, indicating moderate but financially significant attrition within the SME segment.
+🔍 Key Insights
 
-Price was not the strongest driver of churn; consumption over the last 12 months, forecasted meter rent, and net margin showed stronger relationships with churn behavior.
+Customer churn rate was approximately 9–10%, which is financially significant for the SME segment.
 
-Customers who stayed beyond the first five months showed significantly lower churn probability, highlighting a critical early-retention window.
+Price was not the strongest driver of churn. Consumption over the last 12 months, forecasted meter rent, and net margin had stronger relationships with churn.
 
-Gas subscription status and electricity consumption patterns played a more influential role than pricing fluctuations alone.
+Customers who stayed beyond the first five months showed a significantly lower probability of churning.
 
-Recommendations
+Gas subscription status and electricity consumption patterns influenced churn more than pricing changes alone.
 
-Focus on retaining customers during the first five months through onboarding engagement strategies rather than blanket discounting.
+💡 Recommendations
 
-Avoid automatically applying a 20% discount, as price sensitivity alone does not sufficiently explain churn and may lead to unnecessary revenue loss.
+Focus on retaining customers during the first five months through better onboarding and engagement strategies.
 
-Deploy the Random Forest model to identify high-risk customers, but tie predictions to margin impact before offering incentives.
+Avoid automatically offering a 20% discount, as price is not the main churn driver and blanket discounts may reduce revenue unnecessarily.
 
-Implement a targeted discount strategy optimized per customer based on predicted churn probability and expected revenue contribution rather than a flat discount policy.
+🤖 Deploy the Random Forest model to identify high-risk customers before applying incentives.
+
+📊 Implement a targeted discount strategy based on predicted churn probability and customer margin instead of a flat discount policy.
